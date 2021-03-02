@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<h3>Profiliniz</h3>
+<hr>
+<br>
+<br>
+<br>
+{% if profil %}
+İsim:{{profil.name}}
+<hr>
+Kullanıcı adı:{{profil.username}}
+<hr>
+E mail:{{profil.email}}
+<hr>
+
+{% else %}
+<div class="alert alert-warning">Bir hata oluştu !!!</div>
+{% endif %}
+
+
+
+
+
+{% endblock body %}
+
+
+
+
+
